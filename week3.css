@@ -1,0 +1,55 @@
+
+p.josh{
+    background-color: grey;
+}
+
+main > h1{
+    color: green;
+    font-size: 3rem;
+}
+
+h1{
+    color: red;
+}
+
+main>p{
+    color: black;
+}
+
+/* adjacent siblings */
+
+
+*{
+    font-size: 15px;
+}
+
+/* 010 - class selector */
+
+.josh{
+    background-color: black;
+}
+
+.josh.george{
+    padding: 2em;
+    color: black;
+}
+
+#third{
+    color: black;
+    padding: 2em;
+}
+
+main{
+    height: 100vh;
+    background-color: #fff !important;
+
+    background-image: linear-gradient(45deg, green 50%, yellow 70%);
+
+    background-image: linear-gradient(90deg, red 35%, green 35%, green 70%, blue 70%);
+
+    background-image: linear-gradient(to bottom left, red 50%, green 50%);
+}
+
+h1{
+    border: 12px solid #00f;
+}
