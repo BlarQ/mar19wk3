@@ -1,0 +1,53 @@
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 300px;
+    width: 300px;
+    border: 5px solid crimson;
+    margin: 10px;
+}
+
+li:nth-of-type(even){
+    background-image: radial-gradient(circle, blue 40%, gold 40%);
+}
+
+li:nth-of-type(odd){
+    background-image: linear-gradient(to top, gold 20%, violet 20%);
+}
+
+li:first-of-type,li:last-of-type{
+    background-image: linear-gradient(to top right, gold 20%, red 20%);
+}
+
+/* repeating linear gradient  */
+/* even  */
+li:nth-of-type(3n+2){
+    background-image: repeating-linear-gradient(30deg, khaki 10%, tomato 12%);
+}
+/* odd */
+li:nth-of-type(2n+2){
+    background-image: repeating-linear-gradient(30deg, khaki 10%, tomato 12%);
+}
+
+li:nth-of-type(3n+2){
+    background-image: repeating-linear-gradient(30deg, khaki 10%, tomato 12%, gold 14%);
+}
+
+/* repeating radial  */
+/* starting from 6 */
+li:nth-of-type(n+6){
+    background-image: repeating-radial-gradient(circle, khaki 10%, tomato 12%, gold 14%);
+}
+
+
+/* cover made image fit in the container  */
+/* 100px is the size of the tree2 */
+/* repeat-x: repeat image in x-axis. same for y-axis */
+/* no-repeat: image is not repeated in whatever axis indicated */
+li:nth-of-type(1){
+    background-image: url(./media/tree2.jpg), url(./media/tree1.jpg);
+    background-size: 100px, cover;
+    background-repeat: repeat-x, no-repeat;
+}
